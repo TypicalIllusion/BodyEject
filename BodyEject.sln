@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BodyEject", "BodyEject\BodyEject.csproj", "{CFC0301F-8041-4FC4-8321-E369BEE4608A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CFC0301F-8041-4FC4-8321-E369BEE4608A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFC0301F-8041-4FC4-8321-E369BEE4608A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFC0301F-8041-4FC4-8321-E369BEE4608A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFC0301F-8041-4FC4-8321-E369BEE4608A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AC23E701-F87F-4D2E-AF57-3004FCB02598}
+	EndGlobalSection
+EndGlobal
