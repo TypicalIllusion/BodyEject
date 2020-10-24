@@ -61,20 +61,23 @@
     <Reference Include="DissonanceVoip">
       <HintPath>..\..\..\..\OneDrive\Desktop\Reference\DissonanceVoip.dll</HintPath>
     </Reference>
-    <Reference Include="DupecUpdater %283%29">
-      <HintPath>..\..\..\..\OneDrive\Desktop\Reference\DupecUpdater (3).dll</HintPath>
+    <Reference Include="Exiled.API, Version=2.1.8.0, Culture=neutral, processorArchitecture=AMD64">
+      <HintPath>..\packages\EXILED.2.1.8.1\lib\net472\Exiled.API.dll</HintPath>
     </Reference>
-    <Reference Include="Exiled.API">
-      <HintPath>..\..\..\..\OneDrive\Desktop\Reference\Exiled.API.dll</HintPath>
+    <Reference Include="Exiled.Bootstrap, Version=2.1.8.0, Culture=neutral, processorArchitecture=AMD64">
+      <HintPath>..\packages\EXILED.2.1.8.1\lib\net472\Exiled.Bootstrap.dll</HintPath>
     </Reference>
-    <Reference Include="Exiled.Events">
-      <HintPath>..\..\..\..\OneDrive\Desktop\Reference\Exiled.Events.dll</HintPath>
+    <Reference Include="Exiled.Events, Version=2.1.8.0, Culture=neutral, processorArchitecture=AMD64">
+      <HintPath>..\packages\EXILED.2.1.8.1\lib\net472\Exiled.Events.dll</HintPath>
     </Reference>
-    <Reference Include="Exiled.Loader">
-      <HintPath>..\..\..\..\OneDrive\Desktop\Reference\Exiled.Loader.dll</HintPath>
+    <Reference Include="Exiled.Loader, Version=2.1.8.0, Culture=neutral, processorArchitecture=AMD64">
+      <HintPath>..\packages\EXILED.2.1.8.1\lib\net472\Exiled.Loader.dll</HintPath>
     </Reference>
-    <Reference Include="Exiled.Updater">
-      <HintPath>..\..\..\..\OneDrive\Desktop\Reference\Exiled.Updater.dll</HintPath>
+    <Reference Include="Exiled.Permissions, Version=2.1.8.0, Culture=neutral, processorArchitecture=AMD64">
+      <HintPath>..\packages\EXILED.2.1.8.1\lib\net472\Exiled.Permissions.dll</HintPath>
+    </Reference>
+    <Reference Include="Exiled.Updater, Version=3.0.3.0, Culture=neutral, processorArchitecture=AMD64">
+      <HintPath>..\packages\EXILED.2.1.8.1\lib\net472\Exiled.Updater.dll</HintPath>
     </Reference>
     <Reference Include="Mirror">
       <HintPath>..\..\..\..\OneDrive\Desktop\Reference\Mirror.dll</HintPath>
@@ -108,6 +111,9 @@
     <Compile Include="Handlers\Player.cs" />
     <Compile Include="Handlers\Server.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
