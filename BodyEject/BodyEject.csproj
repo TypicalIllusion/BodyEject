@@ -33,14 +33,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\..\..\OneDrive\Desktop\Reference\Assembly-CSharp.dll</HintPath>
+    <Reference Include="0Harmony, Version=2.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\OneDrive\Desktop\Reference\0Harmony.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp-firstpass">
       <HintPath>..\..\..\..\OneDrive\Desktop\Reference\Assembly-CSharp-firstpass.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp-Publicized">
       <HintPath>..\..\..\..\OneDrive\Desktop\Reference\Assembly-CSharp-Publicized.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp_Publicized">
+      <HintPath>..\..\..\..\OneDrive\Desktop\Reference\Assembly-CSharp_Publicized.dll</HintPath>
     </Reference>
     <Reference Include="BouncyCastle.Crypto">
       <HintPath>..\..\..\..\OneDrive\Desktop\Reference\BouncyCastle.Crypto.dll</HintPath>
@@ -59,12 +63,6 @@
     </Reference>
     <Reference Include="DissonanceVoip">
       <HintPath>..\..\..\..\OneDrive\Desktop\Reference\DissonanceVoip.dll</HintPath>
-    </Reference>
-    <Reference Include="DupecToolbox %281%29">
-      <HintPath>..\..\..\..\OneDrive\Desktop\Reference\DupecToolbox (1).dll</HintPath>
-    </Reference>
-    <Reference Include="DupecUpdater">
-      <HintPath>..\..\..\..\OneDrive\Desktop\Reference\DupecUpdater.dll</HintPath>
     </Reference>
     <Reference Include="DupecUpdater %283%29">
       <HintPath>..\..\..\..\OneDrive\Desktop\Reference\DupecUpdater (3).dll</HintPath>

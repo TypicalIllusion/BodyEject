@@ -12,7 +12,7 @@ namespace BodyEject
         private Handlers.Server server = new Handlers.Server();
         public override string Name { get; } = "BodyEject";
         public override string Author { get; } = "TypicalIllusion";
-        public override Version Version { get; } = new Version(1, 5, 3);
+        public override Version Version { get; } = new Version(1, 5, 2);
         public override Version RequiredExiledVersion { get; } = new Version(2, 1, 8);
         public override string Prefix { get; } = "BodyEject";
 

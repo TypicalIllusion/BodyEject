@@ -4,7 +4,7 @@
     {
         public void WaitingForPlayers()
         {
-            DupecExiledUpdater.DupecUpdater.StartUpdate("BodyEject", "BodyEject", "1.5.3", "TypicalIllusion", "BodyEject", "fU6vxBMY");
+            DupecExiledUpdater.DupecUpdater.StartUpdate("BodyEject", "BodyEject", "1.5.2", "TypicalIllusion", "BodyEject", "fU6vxBMY");
         }
     }
 }
