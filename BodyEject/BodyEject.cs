@@ -13,7 +13,7 @@ namespace BodyEject
         public override string Name { get; } = "BodyEject";
         public override string Author { get; } = "TypicalIllusion";
         public override Version Version { get; } = new Version(1, 5, 2);
-        public override Version RequiredExiledVersion { get; } = new Version(2, 1, 9);
+        public override Version RequiredExiledVersion { get; } = new Version(2, 1, 11);
         public override string Prefix { get; } = "BodyEject";
 
         public static BodyEject Instance;
