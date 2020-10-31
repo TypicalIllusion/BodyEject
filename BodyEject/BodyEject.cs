@@ -24,12 +24,13 @@ namespace BodyEject
 
         public static bool enabledInGame = true;
 
-
+        //this registers/activates the events
         public void RegisterEvents()
         {
             GPlayer.SpawningRagdoll += player.OnSpawningRagdoll;
             GServer.WaitingForPlayers += server.WaitingForPlayers;
         }
+        //this unregisters/deactivates the events
         public void UnregisterEvents()
         {
             GPlayer.SpawningRagdoll -= player.OnSpawningRagdoll;
@@ -39,12 +40,12 @@ namespace BodyEject
             server = null;
         }
 
-
+        //this runs RegisterEvents when the plugin is enabled
         public override void OnEnabled()
         {
             RegisterEvents();
         }
-
+        //this runs UnregisterEvents when the plugin is disabled
         public override void OnDisabled()
         {
             UnregisterEvents();
