@@ -40,10 +40,12 @@ namespace BodyEject
 
         public override void OnEnabled()
         {
+            base.OnEnabled();
             RegisterEvents();
         }
         public override void OnDisabled()
         {
+            base.OnDisabled();
             UnregisterEvents();
         }
     }
