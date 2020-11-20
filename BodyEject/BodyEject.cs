@@ -1,8 +1,8 @@
 ﻿using System;
 using Exiled.API.Features;
 using Exiled.API.Enums;
-using GServer = Exiled.Events.Handlers.Server;
-using GPlayer = Exiled.Events.Handlers.Player;
+using SServer = Exiled.Events.Handlers.Server;
+using PPlayer = Exiled.Events.Handlers.Player;
 
 namespace BodyEject
 {
@@ -26,13 +26,15 @@ namespace BodyEject
 
         public void RegisterEvents()
         {
-            GPlayer.SpawningRagdoll += player.OnSpawningRagdoll;
-            GServer.WaitingForPlayers += server.WaitingForPlayers;
+            PPlayer.SpawningRagdoll += player.OnSpawningRagdoll;
+            PPlayer.Dying += player.OnDying;
+            SServer.WaitingForPlayers += server.WaitingForPlayers;
         }
         public void UnregisterEvents()
         {
-            GPlayer.SpawningRagdoll -= player.OnSpawningRagdoll;
-            GServer.WaitingForPlayers -= server.WaitingForPlayers;
+            PPlayer.SpawningRagdoll -= player.OnSpawningRagdoll;
+            PPlayer.Dying -= player.OnDying;
+            SServer.WaitingForPlayers -= server.WaitingForPlayers;
 
             player = null;
             server = null;

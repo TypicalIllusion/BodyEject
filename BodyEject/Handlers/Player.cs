@@ -34,5 +34,18 @@ namespace BodyEject.Handlers
 
         }
 
-    }
+        public void OnDying(DyingEventArgs ev)
+        {
+            if (ev.HitInformation.GetDamageType() == DamageTypes.Pocket)
+            {
+                ev.Target.ClearInventory();
+                Log.Debug($"A guy died :o");
+            }
+        }
+            
+            
+            
+
+}
+
 }
