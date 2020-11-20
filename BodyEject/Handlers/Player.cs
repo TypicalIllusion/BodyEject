@@ -1,6 +1,5 @@
 ﻿using Exiled.Events.EventArgs;
 using UnityEngine;
-using RemoteAdmin;
 using Exiled.API.Features;
 using Exiled.API.Enums;
 
@@ -8,7 +7,6 @@ namespace BodyEject.Handlers
 {
     class Player
     {
-        private PlayerCommandSender sender;
         public void OnSpawningRagdoll(SpawningRagdollEventArgs ev)
         {
 
