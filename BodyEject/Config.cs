@@ -13,7 +13,6 @@ namespace BodyEject
         [Description("Remove items?")]
         public bool ItemDrop { get; set; } = true;
 
-
         [Description("Enable debug logs?")]
         public bool Debug { get; set; } = false;
     }
