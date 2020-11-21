@@ -1,5 +1,4 @@
 # BodyEject
-<<<<<<< HEAD
 A plugin the removes and teleports bodies from the pocket dimension to heavy containment
 # Config Options
 | Name | Type | Description | Default |
@@ -10,6 +9,3 @@ A plugin the removes and teleports bodies from the pocket dimension to heavy con
 
 
 If you would like any rooms for the bodies to be added/removed, lmk. Discord: TypicalIllusion#5726
-=======
-Teleports bodies out of the pocket dimension and puts them into heavy. Also removes items. (bool)
->>>>>>> 966d13398387223ae60395d15d353659ba975384
