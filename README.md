@@ -8,4 +8,4 @@ A plugin the removes and teleports bodies from the pocket dimension to heavy con
 | debug | bool | Toggles debug mode | false |
 
 
-If you would like any rooms for to be teleported to, removing or adding, lmk. Discord: TypicalIllusion#5726
+If you would like any rooms for the bodies to be teleported to be teleported to, removing or adding, lmk. Discord: TypicalIllusion#5726
