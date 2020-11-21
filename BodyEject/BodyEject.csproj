@@ -109,7 +109,6 @@
     <Compile Include="Constants.cs" />
     <Compile Include="Config.cs" />
     <Compile Include="Handlers\Player.cs" />
-    <Compile Include="Handlers\Server.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -1,7 +1,10 @@
-﻿using Exiled.Events.EventArgs;
-using UnityEngine;
+﻿using UnityEngine;
+
+using Exiled.Events.EventArgs;
 using Exiled.API.Features;
 using Exiled.API.Enums;
+
+using static BodyEject.BodyEject;
 
 namespace BodyEject.Handlers
 {
@@ -34,12 +37,16 @@ namespace BodyEject.Handlers
 
         public void OnDying(DyingEventArgs ev)
         {
-            if (ev.HitInformation.GetDamageType() == DamageTypes.Pocket)
-            {
-                ev.Target.ClearInventory();
-                Log.Debug($"A guy died :o");
-            }
-        }
+            if (!Singleton.Config.ItemDrop) return;
+                else
+                    {
+                    if (ev.HitInformation.GetDamageType() == DamageTypes.Pocket)
+                        {
+                            ev.Target.ClearInventory();
+                                Log.Debug($"{ev.Target.Nickname} lost all of their items.");
+                            }
+                        }
+                    }
             
             
             

@@ -1,7 +1,8 @@
 ﻿using System;
+
 using Exiled.API.Features;
 using Exiled.API.Enums;
-using SServer = Exiled.Events.Handlers.Server;
+
 using PPlayer = Exiled.Events.Handlers.Player;
 
 namespace BodyEject
@@ -9,10 +10,9 @@ namespace BodyEject
     public class BodyEject : Plugin<Config>
     {
         private Handlers.Player player = new Handlers.Player();
-        private Handlers.Server server = new Handlers.Server();
         public override string Name { get; } = "BodyEject";
         public override string Author { get; } = "TypicalIllusion";
-        public override Version Version { get; } = new Version(1, 5, 0);
+        public override Version Version { get; } = new Version(2, 0, 0);
         public override Version RequiredExiledVersion { get; } = new Version(2, 1, 16);
         public override string Prefix { get; } = "BodyEject";
 
@@ -20,6 +20,7 @@ namespace BodyEject
 
         public override PluginPriority Priority { get; } = PluginPriority.Low;
 
+        public static BodyEject Singleton;
 
 
         public static bool enabledInGame = true;
@@ -28,16 +29,15 @@ namespace BodyEject
         {
             PPlayer.SpawningRagdoll += player.OnSpawningRagdoll;
             PPlayer.Dying += player.OnDying;
-            SServer.WaitingForPlayers += server.WaitingForPlayers;
+            Singleton = this;
         }
         public void UnregisterEvents()
         {
             PPlayer.SpawningRagdoll -= player.OnSpawningRagdoll;
             PPlayer.Dying -= player.OnDying;
-            SServer.WaitingForPlayers -= server.WaitingForPlayers;
 
             player = null;
-            server = null;
+            Singleton = null;
         }
 
         public override void OnEnabled()
