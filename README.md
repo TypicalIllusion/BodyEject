@@ -1,15 +1,11 @@
 # BodyEject
-<<<<<<< HEAD
 A plugin the removes and teleports bodies from the pocket dimension to heavy containment
 # Config Options
 | Name | Type | Description | Default |
 | --- | --- | --- | --- |
-| is_enabled | bool | Toggles the plugin | true |
-| item_drop | bool | Toggles if the items should get removed on death | true |
-| debug | bool | Toggles debug mode | false |
+| `is_enabled` | bool | Toggles the plugin | true |
+| `item_drop` | bool | Toggles if the items should get removed on death | true |
+| `debug` | bool | Toggles debug mode | false |
 
 
-If you would like any rooms for the bodies to be added/removed, lmk. Discord: TypicalIllusion#5726
-=======
-Teleports bodies out of the pocket dimension and puts them into heavy. Also removes items. (bool)
->>>>>>> 966d13398387223ae60395d15d353659ba975384
+If you would like any rooms for the bodies to be teleported to be teleported to, removing or adding, lmk. Discord: TypicalIllusion#5726
