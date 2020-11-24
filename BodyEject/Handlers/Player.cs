@@ -27,7 +27,7 @@ namespace BodyEject.Handlers
                             float posy = room.Position.y + 2;
                             float posz = room.Position.z;
                             ev.Position = new Vector3(posx, posy, posz);
-                            Log.Debug($"{ev.PlayerNickname} as {ev.Owner.Role} died by 106 (nerd), Their corpse teleported to: {posx}, {posy}, {posz}");
+                                Log.Debug($"{ev.PlayerNickname} as {ev.Owner.Role} died by 106 (nerd), Their corpse teleported to: {posx}, {posy}, {posz}");
                         }
                     }
                 }
@@ -43,7 +43,8 @@ namespace BodyEject.Handlers
                     if (ev.HitInformation.GetDamageType() == DamageTypes.Pocket)
                         {
                             ev.Target.ClearInventory();
-                                Log.Debug($"{ev.Target.Nickname} lost all of their items.");
+                                
+                                Log.Debug($"{ev.Target.Nickname} lost all of their items.", Singleton.Config.Debug);
                             }
                         }
                     }
