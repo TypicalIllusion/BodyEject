@@ -5,7 +5,6 @@ using Exiled.API.Features;
 using Exiled.API.Enums;
 
 using static BodyEject.BodyEject;
-using MEC;
 
 namespace BodyEject.Handlers
 {
