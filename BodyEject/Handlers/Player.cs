@@ -41,18 +41,21 @@ namespace BodyEject.Handlers
 
         public void OnDying(DyingEventArgs ev)
         {
-            if (!Singleton.Config.ItemDrop) return;
+            if (!Singleton.Config.IsEnabled) return;
+            else
+            {
+                if (!Singleton.Config.ItemDrop) return;
                 else
-                    {
+                {
                     if (ev.HitInformation.GetDamageType() == DamageTypes.Pocket)
-                        {
+                    {
                         ev.Target.ClearInventory();
-                                
-                            Log.Debug($"{ev.Target.Nickname} lost all of their items.", Singleton.Config.Debug);
-                            }
-                        }
+
+                        Log.Debug($"{ev.Target.Nickname} lost all of their items.", Singleton.Config.Debug);
                     }
-            
+                }
+            }
+        }
             
             
 
