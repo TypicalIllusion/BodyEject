@@ -50,5 +50,9 @@ namespace BodyEject
             base.OnDisabled();
             UnregisterEvents();
         }
+        public override void OnReloaded()
+        {
+            base.OnReloaded();
+        }
     }
 }
