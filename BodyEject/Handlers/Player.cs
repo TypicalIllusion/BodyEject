@@ -30,7 +30,7 @@ namespace BodyEject.Handlers
                                 float posy = room.Position.y + 2;
                                 float posz = room.Position.z;
                                 ev.Position = new Vector3(posx, posy, posz);
-                                Log.Debug($"{ev.PlayerNickname} as {ev.Owner.Role} died by 106 (nerd), Their corpse teleported to: {posx}, {posy}, {posz}");
+                                Log.Debug($"{ev.PlayerNickname} as {ev.Owner.Role} died by 106 (nerd), Their corpse teleported to: {posx}, {posy}, {posz}", Singleton.Config.Debug);
                             }
                         }
                     }
