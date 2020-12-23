@@ -13,4 +13,5 @@ To install EXILED go [here](https://www.youtube.com/watch?v=EUfzj8OWvQU).
 Once EXILED is installed, go to appdata/roaming/exiled/plugins and put it there. (windows)
 LINUX: .config/exiled/plugins
 
-If you would like any rooms for the bodies to be teleported to be teleported to, removing or adding, lmk. Discord: TypicalIllusion#5726
+If you would like any rooms for the bodies to be teleported to be teleported to, removing or adding, lmk. 
+My [Discord](http://discordapp.com/users/383725483256315905)
